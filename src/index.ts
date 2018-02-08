@@ -3,10 +3,10 @@ import * as pug from "pug";
 import { TemplateEngine, TemplateOptions } from "sfn";
 
 export interface PugOptions extends TemplateOptions {
-    /** If set to true, the tokens and function body are logged to stdout. */
+    /** If `true`, the tokens and function body are logged to stdout. */
     debug?: boolean;
     /**
-     * If set to true, the function source will be included in the compiled 
+     * If `true`, the function source will be included in the compiled 
      * template for better error messages (default: `true`).
      */
     compileDebug?: boolean;

@@ -2,6 +2,9 @@
 
 **Pug template engine for [sfn](https://github.com/hyurl/sfn) framework.**
 
+For more information about **pug**, please visit 
+[https://pugjs.org/](https://pugjs.org/).
+
 ## Install
 
 ```sh

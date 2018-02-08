@@ -1,0 +1,28 @@
+{
+  "name": "sfn-pug-engine",
+  "version": "0.1.1",
+  "description": "Ejs template engine for sfn framework.",
+  "main": "dist/index.js",
+  "types": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sfn",
+    "pug"
+  ],
+  "author": {
+    "name": "Ayon Lee",
+    "email": "i@hyurl.com",
+    "url": "http://hyurl.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hyurl/sfn-pug-engine.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@types/pug": "^2.0.4",
+    "pug": "^2.0.0-rc.4"
+  }
+}

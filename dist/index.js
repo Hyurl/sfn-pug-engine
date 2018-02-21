@@ -16,7 +16,7 @@ class PugEngine extends sfn_1.TemplateEngine {
                 }
             }
             else {
-                let options = Object.assign({}, this.options);
+                let options = Object.assign({ filename }, this.options);
                 delete options.cache;
                 delete options.encoding;
                 fs.readFile(filename, this.options.encoding, (err, data) => {
@@ -24,9 +24,10 @@ class PugEngine extends sfn_1.TemplateEngine {
                         reject(err);
                     }
                     else {
-                        Class._caches[filename] = pug.compile(data, options);
                         try {
-                            resolve(Class._caches[filename](vars));
+                            let compile = pug.compile(data, options);
+                            Class._caches[filename] = compile;
+                            resolve(compile(vars));
                         }
                         catch (err) {
                             reject(err);
